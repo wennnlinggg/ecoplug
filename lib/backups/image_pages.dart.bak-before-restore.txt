@@ -1,0 +1,3 @@
+/* Corrupted snapshot (moved out of lib root). Kept for safety. */
+
+// Original content preserved but renamed to .txt to avoid Dart analysis.

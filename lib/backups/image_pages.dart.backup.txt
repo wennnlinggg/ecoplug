@@ -1,0 +1,9 @@
+/* Backup of image_pages.dart (moved out of lib root to avoid analyzer duplicates) */
+
+import 'package:flutter/material.dart';
+import 'goal_store.dart';
+
+// (kept as-is for safekeeping)
+
+// --- trimmed copy ---
+// The full original backup is preserved in the repo but not analyzed.
