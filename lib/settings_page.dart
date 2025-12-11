@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'api_service.dart';
 import 'notification_settings_page.dart';
+import 'security_settings_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -196,19 +197,10 @@ class _SettingsPageState extends State<SettingsPage> {
                         ListTile(
                           title: const Text('Security settings'),
                           trailing: const Icon(Icons.chevron_right),
-                          onTap: () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (_) => Scaffold(
-                                appBar: AppBar(title: const Text('Security')),
-                                body: const Center(
-                                  child: Text(
-                                    'Security settings (placeholder)',
-                                  ),
-                                ),
-                              ),
-                            ),
+                          onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SecuritySettingsPage())),
+                           
                           ),
-                        ),
+                        
                         const Divider(height: 1),
                         ListTile(
                           title: const Text('Dark mode of plugins'),
@@ -244,6 +236,16 @@ class _SettingsPageState extends State<SettingsPage> {
                           trailing: Icon(Icons.chevron_right),
                         ),
                       ],
+                    ),
+                  ),
+                                    const SizedBox(height: 32),
+                  Center(
+                    child: TextButton(
+                      onPressed: () {
+                        // navigate to login and clear stack
+                        Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
+                      },
+                      child: const Text('Log out', style: TextStyle(color: Colors.red, fontWeight: FontWeight.w600)),
                     ),
                   ),
                 ],

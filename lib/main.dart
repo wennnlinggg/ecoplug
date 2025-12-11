@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         '/eco': (ctx) => EcoPlugPage(),
         '/tips': (ctx) => TipsPage(),
         '/learn': (ctx) => LearnPage(),
-        '/notifications': (ctx) => const NotificationsPage(),
+        '/notification': (ctx) => const NotificationsPage(),
       },
       home: const WelcomePage(),
     );

@@ -2145,6 +2145,21 @@ class CarbonEmissionPage extends StatelessWidget {
                 ),
               ),
 
+              const SizedBox(height: 16),
+
+              // Two tiles side by side
+              Row(
+                children: [
+                  Expanded(
+                    child: _statTile('500', 'ntd/kWh', 'electricity price'),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: _statTile('5', 'ntd', 'current'),
+                  ),
+                ],
+              ),
+
               const SizedBox(height: 24),
             ],
           ),
